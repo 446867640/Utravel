@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:padding="10dp"
+    android:background="#fff"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:id="@+id/ll_dec_total_money"
+	    android:layout_height="30dp"
+	    android:layout_width="match_parent"
+	    android:gravity="center_vertical"
+	    android:orientation="horizontal">
+	    
+	    <TextView 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:text="商品金额"
+	        android:textSize="14dp"
+	        android:textColor="#1a1a1a"/>
+	    
+	    <View 
+	        android:layout_height="match_parent"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"/>
+	    
+	    <TextView 
+	        android:id="@+id/tv_dec_total_money"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:singleLine="true"
+	        android:text=""
+	        android:textSize="14dp"
+	        android:textColor="#1a1a1a"/>
+	</LinearLayout>
+
+    <LinearLayout 
+        android:id="@+id/ll_dec_postage_money"
+	    android:layout_height="30dp"
+	    android:layout_width="match_parent"
+	    android:gravity="center_vertical"
+	    android:orientation="horizontal"
+	    android:visibility="gone">
+	    
+	    <TextView 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:text="运费"
+	        android:textSize="14dp"
+	        android:textColor="#1a1a1a"/>
+	    
+	    <View 
+	        android:layout_height="match_parent"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"/>
+	    
+	    <TextView 
+	        android:id="@+id/tv_dec_postage_money"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:singleLine="true"
+	        android:text=""
+	        android:textSize="14dp"
+	        android:textColor="#ff0000"/>
+	</LinearLayout>
+	
+    <LinearLayout 
+        android:id="@+id/ll_dec_conpon_money"
+	    android:layout_height="30dp"
+	    android:layout_width="match_parent"
+	    android:gravity="center_vertical"
+	    android:orientation="horizontal"
+	    android:visibility="gone">
+	    
+	    <TextView 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:text="抵扣金"
+	        android:textSize="14dp"
+	        android:textColor="#1a1a1a"/>
+	    
+	    <View 
+	        android:layout_height="match_parent"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"/>
+	    
+	    <TextView 
+	        android:id="@+id/tv_dec_conpon_money"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:singleLine="true"
+	        android:text=""
+	        android:textSize="14dp"
+	        android:textColor="#ff0000"/>
+	</LinearLayout>
+	
+    <LinearLayout 
+        android:id="@+id/ll_dec_conpon_point"
+	    android:layout_height="30dp"
+	    android:layout_width="match_parent"
+	    android:gravity="center_vertical"
+	    android:orientation="horizontal"
+	    android:visibility="gone">
+	    
+	    <TextView 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:text="抵扣积分"
+	        android:textSize="14dp"
+	        android:textColor="#1a1a1a"/>
+	    
+	    <View 
+	        android:layout_height="match_parent"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"/>
+	    
+	    <TextView 
+	        android:id="@+id/tv_dec_conpon_point"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:singleLine="true"
+	        android:text=""
+	        android:textSize="14dp"
+	        android:textColor="#ff0000"/>
+	</LinearLayout>
+
+</LinearLayout>

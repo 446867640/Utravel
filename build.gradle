@@ -1,0 +1,28 @@
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.1'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        //依赖recyclerview适配器BaseRecyclerViewAdapterHelper  和  图片剪裁都用到
+        maven { url "https://jitpack.io" }
+        //极光推送
+        maven { url "https://maven.google.com" }
+        //阿里百川
+//        maven { url "http://repo.baichuan-android.taobao.com/content/groups/BaichuanRepositories/" }
+        //友盟+
+//        maven { url 'https://dl.bintray.com/umsdk/release' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/delegate_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/part_toolbar2" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/delegate_bg"
+        app:srlEnableLoadMore="true"
+        app:srlEnablePreviewInEditMode="false"
+        app:srlEnableRefresh="false"
+        app:srlFooterHeight="40dp"
+        app:srlHeaderHeight="60dp"
+        app:srlPrimaryColor="#1595FA">
+
+        <com.utravel.app.ui.MyScrollViewWithBack
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <GridView
+                android:id="@+id/gv_goods"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:fadingEdge="none"
+                android:horizontalSpacing="1dp"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="1"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="1dp"
+                android:layout_margin="6dp"
+                android:visibility="visible" />
+
+        </com.utravel.app.ui.MyScrollViewWithBack>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</android.support.v7.widget.LinearLayoutCompat>

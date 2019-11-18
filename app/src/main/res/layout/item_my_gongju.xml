@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center"
+    android:orientation="vertical">
+    
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv1"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:text="我的订单"
+        android:textColor="@color/text_color_black"/>
+
+</android.support.v7.widget.LinearLayoutCompat>

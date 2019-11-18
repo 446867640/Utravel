@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:background="#fff"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="购买小米手机"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textSize="16sp"
+            android:textColor="#333"/>
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="2018-04-17 17:30:21"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"
+            android:textColor="#666"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_3"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="-100.00"
+        android:textSize="16sp"
+        android:layout_marginRight="10dp"
+        android:textColor="#EE7C3E"/>
+
+</LinearLayout>
+

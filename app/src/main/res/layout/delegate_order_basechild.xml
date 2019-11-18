@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/delegate_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srlEnableLoadMore="true"
+            app:srlEnablePreviewInEditMode="true"
+            app:srlEnableRefresh="true"
+            app:srlFooterHeight="40dp"
+            app:srlHeaderHeight="60dp"
+            app:srlPrimaryColor="#1595FA">
+
+            <com.utravel.app.ui.MyScrollViewWithBack
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.utravel.app.ui.MyGridView
+                    android:id="@+id/gv_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@null"
+                    android:fadingEdge="none"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="1"
+                    android:scrollbars="none"
+                    android:verticalSpacing="10dp" />
+
+            </com.utravel.app.ui.MyScrollViewWithBack>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="130dp"
+            android:src="@mipmap/empty_order"
+            android:visibility="gone" />
+    </RelativeLayout>
+</android.support.v7.widget.LinearLayoutCompat>

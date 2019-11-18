@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/delegate_bg"
+    android:orientation="vertical" >
+
+    <com.utravel.app.ui.MyScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="false"
+            android:orientation="vertical" >
+
+            <!-- 第一部分商品部分 -->
+            <include layout="@layout/part_goodsinfo_part1"/>
+
+            <!-- 第二部分详情 -->
+            <include layout="@layout/part_goodsinfo_part2"/>
+
+        </LinearLayout>
+    </com.utravel.app.ui.MyScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_buy"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#EF0B0B"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="立即购买"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:src="@mipmap/backgraycricle" />
+
+    <ImageView
+        android:id="@+id/iv_totop"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="15dp"
+        android:src="@mipmap/gototop"
+        android:visibility="gone" />
+
+</RelativeLayout>

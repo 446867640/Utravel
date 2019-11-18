@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.utravel.app.ui.MyScrollViewWithBack
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="44dp">
+
+        <com.utravel.app.ui.MyGridView
+            android:id="@+id/gv_fans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none"
+            android:horizontalSpacing="1dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="1"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="1dp" />
+
+    </com.utravel.app.ui.MyScrollViewWithBack>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_fansnums"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/delegate_orange"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="专属粉丝：3"
+        android:textColor="@color/text_color_whitefff"
+        android:textSize="14sp" />
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:background="@drawable/line_red_bg_white_40_daojiao"
+    android:layout_marginLeft="38dp"
+    android:layout_marginRight="38dp"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/et_search"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:hint=""
+        android:gravity="center_vertical"
+        android:imeOptions="actionSearch"
+        android:singleLine="true"
+        android:textSize="14sp" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_search"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@mipmap/search_button" />
+
+</android.support.v7.widget.LinearLayoutCompat>

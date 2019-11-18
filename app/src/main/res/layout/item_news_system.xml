@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="2019/09/04  15:04"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="@color/text_color_black"/>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="12dp"
+        android:background="@drawable/bg_baise_10_daojiao"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:text="全民邀请福利，邀请一人获5元现金奖励！"
+            android:textColor="@color/text_color_black"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_launcher_background"
+            android:scaleType="fitXY"
+            android:visibility="gone"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv3"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="重大消息：全民邀请福利，邀请一人获5元现金奖励！全民邀请福利，邀请一人获5元现金奖励！重大消息：全民邀请福利，邀请一人获5元现金奖励！全民邀请福利，邀请一人获5元现金奖励！"
+            android:layout_marginTop="12dp"
+            android:textSize="12sp"
+            android:textColor="@color/text_color_black333"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv4"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="管理员"
+            android:layout_marginTop="10dp"
+            android:gravity="center|right"
+            android:textSize="12sp"
+            android:textColor="@color/text_color_black333"/>
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="2019-09-20"
+            android:layout_marginTop="5dp"
+            android:gravity="center|right"
+            android:textSize="12sp"
+            android:textColor="@color/text_color_black333"/>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.LinearLayoutCompat>

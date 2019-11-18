@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/delegate_bg"
+    app:srlEnableLoadMore="true"
+    app:srlEnablePreviewInEditMode="true"
+    app:srlEnableRefresh="false"
+    app:srlFooterHeight="40dp"
+    app:srlHeaderHeight="60dp"
+    app:srlPrimaryColor="#1595FA">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <WebView
+                android:id="@+id/webview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <com.youth.banner.Banner xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/banner1"
+                android:layout_width="match_parent"
+                android:layout_height="164dp"
+                android:background="@color/delegate_white"
+                android:visibility="visible"
+                app:scroll_time="1000" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_icon"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@color/text_color_whitefff"
+                android:paddingTop="10dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_vp_shouye_iconpoint"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/text_color_whitefff"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/ll_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:background="@mipmap/shouyenewsbg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="50dp">
+
+                    <com.gongwen.marqueen.SimpleMarqueeView
+                        android:id="@+id/marqueeview"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:flipInterval="2500"
+                        android:inAnimation="@anim/in_bottom"
+                        android:outAnimation="@anim/out_top"
+                        app:marqueeAnimDuration="2000"
+                        app:smvTextColor="@color/text_color_whitefff"
+                        app:smvTextEllipsize="end"
+                        app:smvTextGravity="center_vertical"
+                        app:smvTextSingleLine="true"
+                        app:smvTextSize="14sp" />
+
+                </android.support.v7.widget.LinearLayoutCompat>
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:src="@mipmap/tuijiantitle" />
+
+                <com.utravel.app.ui.MyGridView
+                    android:id="@+id/gv_goods"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:cacheColorHint="#00000000"
+                    android:fadingEdge="none"
+                    android:horizontalSpacing="8dp"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="2"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="8dp" />
+
+            </android.support.v7.widget.LinearLayoutCompat>
+        </android.support.v7.widget.LinearLayoutCompat>
+    </ScrollView>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

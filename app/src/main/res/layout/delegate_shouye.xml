@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/part_goodslist"
+        layout="@layout/part_shouye_goodslist"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@+id/part_goodsdetail"
+        layout="@layout/part_shouye_goodsdetail"
+        android:visibility="gone"/>
+
+</RelativeLayout>

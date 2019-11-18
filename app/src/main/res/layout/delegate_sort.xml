@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/delegate_bg"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/delegate_white"/>
+
+    <include layout="@layout/part_toolbar"/>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:baselineAligned="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/vertical_list_container"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#EBEBEB"
+            android:layout_height="match_parent"/>
+
+        <FrameLayout
+            android:id="@+id/sort_content_container"
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:layout_height="match_parent"/>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.v7.widget.LinearLayoutCompat>

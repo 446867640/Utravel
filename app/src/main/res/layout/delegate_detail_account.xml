@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/delegate_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/part_toolbar2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srlEnableLoadMore="true"
+            app:srlEnablePreviewInEditMode="false"
+            app:srlEnableRefresh="false"
+            app:srlFooterHeight="40dp"
+            app:srlHeaderHeight="60dp"
+            app:srlPrimaryColor="#1595FA">
+            <!--srlAccentColor srlPrimaryColor 将会改变 Header 和 Footer 的主题颜色-->
+            <!--srlEnablePreviewInEditMode 可以开启和关闭预览功能-->
+
+            <com.utravel.app.ui.MyScrollViewWithBack xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.utravel.app.ui.MyGridView
+                    android:id="@+id/gv_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:gravity="fill"
+                    android:horizontalSpacing="1dp"
+                    android:numColumns="1"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="1dp" />
+
+            </com.utravel.app.ui.MyScrollViewWithBack>
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:src="@mipmap/emptyshoucang"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.LinearLayoutCompat>

@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.utravel.app.ui.MyScrollViewWithBack xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/delegate_bg">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/status_bar"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/delegate_white" />
+
+        <include layout="@layout/part_toolbar" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/ll_touxiang"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/delegate_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="头像设置"
+                android:textColor="@color/text_color_black333"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_touxiang"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/touxiang_gray" />
+
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/ll_nicheng"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/delegate_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="昵称设置"
+                android:textColor="@color/text_color_black333"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_nicheng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/text_color_gray999"
+                android:textSize="12sp" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/right_gray"
+                android:layout_marginLeft="10dp"/>
+
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/ll_taobao"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/delegate_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:visibility="gone">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="淘宝授权"
+                android:textColor="@color/text_color_black333"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_taobao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未授权"
+                android:textColor="@color/text_color_gray999"
+                android:textSize="12sp" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/right_gray" />
+
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/ll_weixin"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/delegate_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:visibility="gone">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="微信绑定"
+                android:textColor="@color/text_color_black333"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_weixin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未绑定"
+                android:textColor="@color/text_color_gray999"
+                android:textSize="12sp" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/right_gray" />
+
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/ll_phone"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/delegate_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号绑定"
+                android:textColor="@color/text_color_black333"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="修改手机号"
+                android:textColor="@color/text_color_gray999"
+                android:textSize="12sp" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/right_gray" />
+
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/ll_mima"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/delegate_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="登录密码"
+                android:textColor="@color/text_color_black333"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="修改密码"
+                android:textColor="@color/text_color_gray999"
+                android:textSize="12sp" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/right_gray" />
+
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/ll_pay_psw"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/delegate_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_pay_psw"
+                android:text="设置支付密码"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_black333"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/right_gray" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/ll_updata"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/delegate_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:text="检查更新"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_black333"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_version"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="版本号：v"
+                android:textColor="#333"
+                android:textSize="14sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/ll_xiaoxi"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/delegate_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:visibility="gone">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="消息推送"
+                android:textColor="@color/text_color_black333"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <com.kyleduo.switchbutton.SwitchButton
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/sb_xiaoxi"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:kswTintColor="@color/delegate_red"/>
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/ll_huancun"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/delegate_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:visibility="gone">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="清除缓存"
+                android:textColor="@color/text_color_black333"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_huancen"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@drawable/line_red_40_daojiao"
+                android:gravity="center"
+                android:text="@string/setting_qingchu"
+                android:textColor="@color/delegate_red"
+                android:textSize="14dp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+        
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            android:layout_marginTop="70dp"
+            android:text="退出登陆"
+            android:textColor="@color/delegate_white"
+            android:background="@drawable/haixiangbtnbg"
+            android:textSize="14sp" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</com.utravel.app.ui.MyScrollViewWithBack>

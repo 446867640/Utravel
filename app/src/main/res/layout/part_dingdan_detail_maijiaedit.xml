@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:background="#fff"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:text="买家留言："
+        android:textColor="#1a1a1a"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/et_remark"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:background="@null"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:hint="填写内容已和卖家协商确认"
+        android:maxLines="3"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="#333"
+        android:textSize="12dp" />
+
+</LinearLayout>

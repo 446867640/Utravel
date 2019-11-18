@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/delegate_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/part_toolbar2" />
+
+    <GridView
+        android:id="@+id/gv_newbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:background="@color/delegate_white"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srlEnableLoadMore="true"
+            app:srlEnablePreviewInEditMode="true"
+            app:srlEnableRefresh="false"
+            app:srlFooterHeight="40dp"
+            app:srlHeaderHeight="60dp"
+            app:srlPrimaryColor="#1595FA">
+            <!--srlAccentColor srlPrimaryColor 将会改变 Header 和 Footer 的主题颜色-->
+            <!--srlEnablePreviewInEditMode 可以开启和关闭预览功能-->
+
+            <GridView
+                android:id="@+id/gv_news"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:cacheColorHint="#00000000"
+                android:fadingEdge="none"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="1"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:visibility="visible" />
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:src="@mipmap/emptynews"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.LinearLayoutCompat>
+
